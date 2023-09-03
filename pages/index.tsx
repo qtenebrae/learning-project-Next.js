@@ -1,19 +1,14 @@
 import { Button, Htag, P, Rating, Tag } from '@/components';
+import { withLayout } from '@/layout/Layout';
 import { useEffect, useState } from 'react';
 
-export default function Home(): JSX.Element {
-	const [counter, setCounter] = useState<number>(0);
-
-	useEffect(() => {
-		console.log('Counter - ' + counter);
-	});
-
+function Home(): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
 
 	return (
 		<>
-			<Htag tag="h1">Курсы по Photoshop {counter}</Htag>
-			<Button appearance="primary" arrow="right" onClick={() => setCounter((x) => x + 1)}>
+			<Htag tag="h1">Курсы по Photoshop</Htag>
+			<Button appearance="primary" arrow="right">
 				Кнопка
 			</Button>
 			<Button appearance="ghost" arrow="down">
@@ -39,3 +34,5 @@ export default function Home(): JSX.Element {
 		</>
 	);
 }
+
+export default withLayout(Home);

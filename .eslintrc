@@ -14,7 +14,8 @@
 			{
 				"allowSingleExtends": true
 			}
-		]
+		],
+		"@typescript-eslint/no-unused-vars": "off"
 	},
 	"extends": [
 		"eslint:recommended",
