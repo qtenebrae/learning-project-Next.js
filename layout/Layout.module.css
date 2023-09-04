@@ -4,13 +4,13 @@
 
     min-height: 100vh;
 
-    gap: 0 30px;
+    gap: 40px 30px;
 }
 
 .header {
     grid-area: header;
 
-    display: none;
+    display: none !important;
 }
 
 .sidebar {
@@ -40,5 +40,9 @@
 
     .header {
         display: block;
+    }
+
+    .body {
+        padding: 25px;
     }
 }
