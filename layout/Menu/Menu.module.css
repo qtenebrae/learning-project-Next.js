@@ -50,14 +50,22 @@
 
 .secondLevelBlock {
 	overflow: hidden;
-
+	
 	padding: 0;
 
 	list-style: none;
 }
 
-.thirdLevel {
+.secondLevelBlock {
+	display: none;
+}
+
+.secondLevelBlockOpened {
 	display: block;
+}
+
+.thirdLevel {
+	display: block; 
 
 	margin-bottom: 10px;
 
