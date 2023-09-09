@@ -1,42 +1,46 @@
 .title {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
 
-    align-items: baseline;
-    justify-items: left;
-    gap: 20px;
+	align-items: baseline;
+	justify-items: left;
+	gap: 20px;
 }
 
 .hhTitle {
-    display: grid;
-    grid-template-columns: auto 1fr;
+	display: grid;
+	grid-template-columns: auto 1fr;
 
-    align-items: baseline;
-    justify-items: left;
-    gap: 20px;
+	align-items: baseline;
+	justify-items: left;
+	gap: 20px;
 }
 
 .seo h1 {
-    margin-top: 10px;
+	margin-top: 10px;
 
-    font-size: 26px;
-    font-weight: 500;
-    line-height: normal;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: normal;
 }
 
 .seo h2 {
-    margin-top: 10px;
+	margin-top: 10px;
 
-
-    font-size: 22px;
-    font-weight: 500;
-    line-height: normal;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: normal;
 }
 
 .seo h3 {
-    margin-top: 10px;
+	margin-top: 10px;
 
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.seo ul,
+.seo ol {
+	list-style: none;
 }

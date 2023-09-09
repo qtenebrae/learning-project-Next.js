@@ -9,6 +9,10 @@ import { firstLevelMenu } from '@/helpers/helpers';
 import { TopPageComponent } from '@/page-components';
 
 function TopPage({ firstCategory, page, products }: TopPageProps): JSX.Element {
+	if (!page || !products) {
+		return <div>Not Found</div>;
+	}
+
 	return <TopPageComponent firstCategory={firstCategory} page={page} products={products} />;
 }
 
