@@ -164,6 +164,21 @@
 	border-bottom: 1px dashed var(--gray-light);
 }
 
+.closed {
+	overflow: hidden;
+
+	max-width: 0;
+	padding: 0;
+}
+
+.opened {
+	max-width: auto;
+	padding: 30px;
+}
+
+.reviews {
+}
+
 @media screen and (width <= 1320px) {
 	.product {
 		grid-template-columns: 70px 30px auto 40px auto 40px 1fr;
