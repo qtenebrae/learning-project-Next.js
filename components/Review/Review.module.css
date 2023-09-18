@@ -23,7 +23,6 @@
 
 @media screen and (width <= 640px) {
 	.review {
-		display: grid;
 		grid-template-columns: [start] 30px [titlestart] auto [dateend] 1fr [end];
 	}
 
