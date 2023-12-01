@@ -5,8 +5,18 @@ import { MenuItem } from '@/interfaces/menu.interface';
 import { firstLevelMenu } from '@/helpers/helpers';
 import { ParsedUrlQuery } from 'querystring';
 import { API } from '@/helpers/api';
+import { useContext, useEffect } from 'react';
+import { AppContext } from '@/context/app.context';
 
-function Type({ firstCategory }: TypeProps): JSX.Element {
+function Type({ menu, firstCategory }: TypeProps): JSX.Element {
+	const { setMenu } = useContext(AppContext);
+
+	useEffect(() => {
+		if (setMenu) {
+			setMenu(menu);
+		}
+	}, [firstCategory]);
+
 	return <>Type: {firstCategory}</>;
 }
 

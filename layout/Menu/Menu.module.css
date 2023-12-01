@@ -45,31 +45,31 @@
 
 	list-style: none;
 
-	border-left: 1px solid #DFDFDF;
+	border-left: 1px solid #dfdfdf;
 }
 
 .secondLevelBlock {
 	overflow: hidden;
-	
+
 	padding: 0;
 
 	list-style: none;
 }
 
 .secondLevelBlock {
-	display: none;
-}
-
-.secondLevelBlockOpened {
-	display: block;
+	overflow: hidden;
 }
 
 .thirdLevel {
-	display: block; 
+	display: block;
+	overflow: hidden;
 
 	margin-bottom: 10px;
 
 	cursor: pointer;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
 
 	color: var(--gray-dark);
 	outline-offset: -1px;
